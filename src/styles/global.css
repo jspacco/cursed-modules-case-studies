@@ -1,0 +1,65 @@
+@import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&family=IBM+Plex+Mono:wght@400;500&family=Source+Serif+4:ital,wght@0,300;0,400;1,300&display=swap');
+
+:root {
+  --bg: #f5f0e8;
+  --surface: #ede8de;
+  --surface2: #e0d9cc;
+  --border: #c8bfaa;
+  --accent: #8b2500;
+  --accent2: #c45a00;
+  --text: #1a1208;
+  --text-dim: #6b5e48;
+  --text-dimmer: #9c8e78;
+  --code-bg: #1a1208;
+  --code-text: #d4cfc8;
+}
+
+*, *::before, *::after {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+html, body, #root {
+  height: 100%;
+}
+
+body {
+  background: var(--bg);
+  color: var(--text);
+  font-family: 'Source Serif 4', Georgia, serif;
+  font-weight: 300;
+  line-height: 1.6;
+}
+
+a {
+  color: var(--accent2);
+  text-decoration: none;
+}
+
+a:hover {
+  text-decoration: underline;
+}
+
+button {
+  cursor: pointer;
+  font-family: 'IBM Plex Mono', monospace;
+}
+
+.app {
+  display: flex;
+  flex-direction: column;
+  min-height: 100%;
+}
+
+/* Error message */
+.error-banner {
+  background: #fff0ee;
+  border: 1px solid var(--accent);
+  color: var(--accent);
+  font-family: 'IBM Plex Mono', monospace;
+  font-size: 0.85rem;
+  padding: 0.75rem 1rem;
+  margin: 1rem;
+  border-radius: 4px;
+}
